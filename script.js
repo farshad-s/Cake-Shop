@@ -10,93 +10,96 @@ const cakeButton = document.getElementById('cake-button');
 const doughnutButton = document.getElementById('doughnut-button');
 const displayAllButton = document.getElementById('all');
 
+const searchBar = document.getElementById('search-bar');
+
 function cakesOnly() {
     cakeButton.addEventListener('click', function() {
-        sweets[0].style.display = 'none';
-        sweets[1].style.display = 'none';
-        sweets[2].style.display = 'none';
-        cupcakes[0].style.display = 'none';
-        cupcakes[1].style.display = 'none';
-        cupcakes[2].style.display = 'none';
-        doughnuts[0].style.display = 'none';
-        doughnuts[1].style.display = 'none';
-        doughnuts[2].style.display = 'none'; 
-        cakes[0].style.display = 'block';
-        cakes[1].style.display = 'block';
-        cakes[2].style.display = 'block';
+        for (let i = 0; i < cakes.length; i++) {
+            cakes[i].style.display = 'block';
+        };
+        for (let i = 0; i < cupcakes.length; i++) {
+            cupcakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < sweets.length; i++) {
+            sweets[i].style.display = 'none';
+        };
+        for (let i = 0; i < doughnuts.length; i++) {
+            doughnuts[i].style.display = 'none';
+        };
     })
 }
 
 function cupcakesOnly() {
     cupcakeButton.addEventListener('click', function() {
-        sweets[0].style.display = 'none';
-        sweets[1].style.display = 'none';
-        sweets[2].style.display = 'none';
-        cakes[0].style.display = 'none';
-        cakes[1].style.display = 'none';
-        cakes[2].style.display = 'none';
-        doughnuts[0].style.display = 'none';
-        doughnuts[1].style.display = 'none';
-        doughnuts[2].style.display = 'none'; 
-        cupcakes[0].style.display = 'block';
-        cupcakes[1].style.display = 'block';
-        cupcakes[2].style.display = 'block';
+        for (let i = 0; i < cakes.length; i++) {
+            cakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < cupcakes.length; i++) {
+            cupcakes[i].style.display = 'block';
+        };
+        for (let i = 0; i < sweets.length; i++) {
+            sweets[i].style.display = 'none';
+        };
+        for (let i = 0; i < doughnuts.length; i++) {
+            doughnuts[i].style.display = 'none';
+        };
     })
-}
+};
 
 function sweetsOnly() {
     sweetButton.addEventListener('click', function() {
-        cupcakes[0].style.display = 'none';
-        cupcakes[1].style.display = 'none';
-        cupcakes[2].style.display = 'none';
-        cakes[0].style.display = 'none';
-        cakes[1].style.display = 'none';
-        cakes[2].style.display = 'none';
-        doughnuts[0].style.display = 'none';
-        doughnuts[1].style.display = 'none';
-        doughnuts[2].style.display = 'none'; 
-        sweets[0].style.display = 'block';
-        sweets[1].style.display = 'block';
-        sweets[2].style.display = 'block';
+        for (let i = 0; i < cakes.length; i++) {
+            cakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < cupcakes.length; i++) {
+            cupcakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < sweets.length; i++) {
+            sweets[i].style.display = 'block';
+        };
+        for (let i = 0; i < doughnuts.length; i++) {
+            doughnuts[i].style.display = 'none';
+        };
     })
-}
+};
 
 function doughnutsOnly() {
     doughnutButton.addEventListener('click', function() {
-        cupcakes[0].style.display = 'none';
-        cupcakes[1].style.display = 'none';
-        cupcakes[2].style.display = 'none';
-        cakes[0].style.display = 'none';
-        cakes[1].style.display = 'none';
-        cakes[2].style.display = 'none';
-        sweets[0].style.display = 'none';
-        sweets[1].style.display = 'none';
-        sweets[2].style.display = 'none'; 
-        doughnuts[0].style.display = 'block';
-        doughnuts[1].style.display = 'block';
-        doughnuts[2].style.display = 'block';
+        for (let i = 0; i < cakes.length; i++) {
+            cakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < cupcakes.length; i++) {
+            cupcakes[i].style.display = 'none';
+        };
+        for (let i = 0; i < sweets.length; i++) {
+            sweets[i].style.display = 'none';
+        };
+        for (let i = 0; i < doughnuts.length; i++) {
+            doughnuts[i].style.display = 'block';
+        };
     })
-}
+};
 
 function displayAll() {
     displayAllButton.addEventListener('click', function() {
-        cupcakes[0].style.display = 'block';
-        cupcakes[1].style.display = 'block';
-        cupcakes[2].style.display = 'block';
-        cakes[0].style.display = 'block';
-        cakes[1].style.display = 'block';
-        cakes[2].style.display = 'block';
-        sweets[0].style.display = 'block';
-        sweets[1].style.display = 'block';
-        sweets[2].style.display = 'block'; 
-        doughnuts[0].style.display = 'block';
-        doughnuts[1].style.display = 'block';
-        doughnuts[2].style.display = 'block';
+        for (let i = 0; i < cakes.length; i++) {
+            cakes[i].style.display = 'block';
+        };
+        for (let i = 0; i < cupcakes.length; i++) {
+            cupcakes[i].style.display = 'block';
+        };
+        for (let i = 0; i < sweets.length; i++) {
+            sweets[i].style.display = 'block';
+        };
+        for (let i = 0; i < doughnuts.length; i++) {
+            doughnuts[i].style.display = 'block';
+        };
     })
-}
+};
 
 cakesOnly();
 cupcakesOnly();
 sweetsOnly();
 doughnutsOnly();
 displayAll();
+textboxFilter();
