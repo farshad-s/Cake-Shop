@@ -11,33 +11,36 @@
         <img class="logo" src="css/img/logo.svg">
         <nav class="nav-bar">
             <ul>
-                <li><a class="text" href="#">Home</a></li>
-                <li><a class="text" href="#">About</a></li>
-                <li><a class="text" href="#">Store</a></li>
+                <li><a class="text" href="#home">Home</a></li>
+                <li><a class="text" href="#about">About</a></li>
+                <li><a class="text" href="#store">Store</a></li>
             </ul>
         </nav>
         <div class="holder">
             <p class="number">+ 123 456 789</p>
-            <button class="cart">2 Items - £15</button>
+            <div class="cart-buttons">
+                <button class="cart">Empty</button>
+                <button class="clear">Clear Cart</button>
+            </div>
         </div>
     </div>
     
-    <div class="home">
+    <a id="home"><div class="home"></a>
         <img src="css/img/background.jpg">
         <h1 class="welcome">Welcome to <span class="name">Shad's</span></h1>
-        <button class="explore">Explore</button>
+        <button class="explore"><a href="#store" id="explore">Explore</a></button>
     </div>
 
-    <div class="about-us">
+    <a id="about"><div class="about-us"></a>
         <div class="about-us-container">
             <h1>About <span class="us">Us</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
-            <button class="explore-more">Explore</button>
+            <button class="explore-more"><a href="#store" id="explore-more">Explore</a></button>
         </div>
         <img src="css/img/sweets-1.jpeg">
     </div>
 
-    <div class="main">
+    <a id="store"><div class="main"></a>
         <div class="title-container">
             <h1 class="our-store">Our <span class="store">Store</span></h1>
         </div>
@@ -61,7 +64,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Sweet Item</p>
-                    <p class="confec-price">£3</p>
+                    <p class="confec-price">£<span class="price">3</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -71,7 +75,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cupcake Item</p>
-                    <p class="confec-price">£5.25</p>
+                    <p class="confec-price">£<span class="price">5.25</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -81,7 +86,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cake Item</p>
-                    <p class="confec-price">£6.75</p>
+                    <p class="confec-price">£<span class="price">6.75</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
         
@@ -92,7 +98,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Doughnut Item</p>
-                    <p class="confec-price">£3.85</p>
+                    <p class="confec-price">£<span class="price">3.85</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -102,7 +109,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Sweet Item</p>
-                    <p class="confec-price">£3.50</p>
+                    <p class="confec-price">£<span class="price">3.50</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -112,7 +120,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cupcake Item</p>
-                    <p class="confec-price">£5</p>
+                    <p class="confec-price">£<span class="price">5</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
         
@@ -123,7 +132,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Doughnut Item</p>
-                    <p class="confec-price">£4</p>
+                    <p class="confec-price">£<span class="price">4</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -133,7 +143,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cake Item</p>
-                    <p class="confec-price">£7.50</p>
+                    <p class="confec-price">£<span class="price">7.50</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -143,7 +154,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Doughnut Item</p>
-                    <p class="confec-price">£4.75</p>
+                    <p class="confec-price">£<span class="price">4.75</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
         
@@ -154,7 +166,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Sweet Item</p>
-                    <p class="confec-price">£4</p>
+                    <p class="confec-price">£<span class="price">4</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -164,7 +177,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cupcake Item</p>
-                    <p class="confec-price">£7</p>
+                    <p class="confec-price">£<span class="price">7</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
 
@@ -174,7 +188,8 @@
                 </div>
                 <div class="confec-name-price">
                     <p class="confec-name">Cake Item</p>
-                    <p class="confec-price">£12</p>
+                    <p class="confec-price">£<span class="price">12</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
                 </div>
             </div>
         </div>

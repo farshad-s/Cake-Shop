@@ -11,6 +11,13 @@ const displayAllButton = document.getElementById('all');
 
 const searchBar = document.getElementById('search-bar');
 
+const addToCart = document.getElementsByClassName('add-to-cart');
+const price = document.getElementsByClassName('price');
+const cart = document.getElementsByClassName('cart')[0];
+const clearCart = document.getElementsByClassName('clear')[0];
+
+// functions for the filters //
+
 function cakeDisplay() {
     for (let i = 0; i < cakes.length; i++) {
         cakes[i].style.display = 'block';
@@ -94,6 +101,8 @@ function allFilter() {
     doughnutDisplay();
 }
 
+// displaying the different filters via the buttons //
+
 function cakesOnly() {
     cakeButton.addEventListener('click', cakeFilter)
 }
@@ -114,6 +123,8 @@ function displayAll() {
     displayAllButton.addEventListener('click', allFilter)
 };
 
+// displaying the different filters via the search bar //
+
 function textBarSearch() {
     if (searchBar.value === 'cakes') {
         return cakeFilter();
@@ -132,12 +143,136 @@ function textBarSearch() {
     }
 }
 
+// adding items to basket and clearing it //
+
+var itemNumber = 0;
+var items = " items - £";
+var totalPrice = 0;
+
+function itemName() {
+    itemNumber === 1 ? items = " item - £" : items = " items - £"
+}
+
+function addToBasket() {
+
+    addToCart[0].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[0].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[1].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[1].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[2].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[2].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[3].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[3].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[4].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[4].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[5].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[5].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[6].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[6].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[7].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[7].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[8].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[8].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[9].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[9].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[10].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[10].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+
+    addToCart[11].addEventListener('click', function() {
+        itemNumber++;
+        totalPrice = totalPrice + parseFloat(price[11].innerHTML);
+        itemName();
+        cart.innerHTML = itemNumber + items + totalPrice;
+    })
+}
+
+function clearShoppingCart() {
+    clearCart.addEventListener('click', function() {
+        cart.innerHTML = "Empty";
+        itemNumber = 0;
+        totalPrice = 0;
+    })
+}
+
+// calling the functions //
+
 cakesOnly();
 cupcakesOnly();
 sweetsOnly();
 doughnutsOnly();
 displayAll();
 textBarSearch();
+addToBasket();
+clearShoppingCart();
+itemName();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
