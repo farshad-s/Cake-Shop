@@ -430,11 +430,23 @@ body {
     max-width: 100%;
   }
   .welcome {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
   }
   .explore {
     padding: 1px 5px;
-    margin-top: 170px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-top: 220px;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .explore {
+    padding: 1px 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-top: 190px;
     background-color: transparent;
   }
 }
