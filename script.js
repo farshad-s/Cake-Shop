@@ -154,7 +154,14 @@ function updateCart() {
 }
 
 function alertTotal() {
-  return alert("Your Shopping Basket Total is " + "£" + totalPrice);
+  return alert(
+    "Your Shopping Basket Total is " +
+      "£" +
+      totalPrice +
+      "\n You have " +
+      itemNumber +
+      " item(s) in your Basket"
+  );
 }
 
 function addToBasket() {
