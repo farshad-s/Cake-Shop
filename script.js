@@ -139,7 +139,7 @@ function textBarSearch() {
   }
 }
 
-// adding items to basket and clearing it //
+// adding items to basket and clearing it + alert when an item is added to basket//
 
 var itemNumber = 0;
 var items = " items - £";
