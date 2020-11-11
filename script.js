@@ -123,6 +123,14 @@ function displayAll() {
   displayAllButton.addEventListener("click", allFilter);
 }
 
+function itemFilter() {
+  cakesOnly();
+  cupcakesOnly();
+  sweetsOnly();
+  doughnutsOnly();
+  displayAll();
+}
+
 // displaying the different filters via the search bar //
 
 function textBarSearch() {
@@ -272,12 +280,8 @@ function clearShoppingCart() {
 
 // calling the functions //
 
-cakesOnly();
-cupcakesOnly();
-sweetsOnly();
-doughnutsOnly();
-displayAll();
+itemName();
+itemFilter();
 textBarSearch();
 addToBasket();
 clearShoppingCart();
-itemName();
