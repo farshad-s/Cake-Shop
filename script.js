@@ -153,12 +153,17 @@ function updateCart() {
   return (cart.innerHTML = itemNumber + items + totalPrice);
 }
 
+function alertTotal() {
+  return alert("Your Shopping Basket Total is " + "£" + totalPrice);
+}
+
 function addToBasket() {
   addToCart[0].addEventListener("click", function () {
     itemNumber++;
     totalPrice = totalPrice + parseFloat(price[0].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[1].addEventListener("click", function () {
@@ -166,6 +171,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[1].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[2].addEventListener("click", function () {
@@ -173,6 +179,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[2].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[3].addEventListener("click", function () {
@@ -180,6 +187,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[3].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[4].addEventListener("click", function () {
@@ -187,6 +195,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[4].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[5].addEventListener("click", function () {
@@ -194,6 +203,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[5].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[6].addEventListener("click", function () {
@@ -201,6 +211,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[6].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[7].addEventListener("click", function () {
@@ -208,6 +219,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[7].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[8].addEventListener("click", function () {
@@ -215,6 +227,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[8].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[9].addEventListener("click", function () {
@@ -222,6 +235,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[9].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[10].addEventListener("click", function () {
@@ -229,6 +243,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[10].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 
   addToCart[11].addEventListener("click", function () {
@@ -236,6 +251,7 @@ function addToBasket() {
     totalPrice = totalPrice + parseFloat(price[11].innerHTML);
     itemName();
     updateCart();
+    alertTotal();
   });
 }
 
