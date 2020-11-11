@@ -428,6 +428,15 @@ body {
     font-size: 15px;
   }
   .home {
+    height: auto;
     max-width: 100%;
+  }
+  .welcome {
+    margin-bottom: 130px;
+  }
+  .explore {
+    padding: 1px 5px;
+    margin-top: 170px;
+    background-color: transparent;
   }
 }
