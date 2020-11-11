@@ -58,7 +58,7 @@ body {
 
 .holder {
   display: flex;
-  width: 40%;
+  width: 34%;
   justify-content: space-between;
   align-items: center;
   margin-right: 2%;
@@ -76,17 +76,27 @@ body {
   transition: ease 0.2s;
 }
 
-.cart {
-  padding: 5px 20px;
+.cart,
+.clear {
   background-color: transparent;
   outline: none;
   border: 2px solid black;
   border-radius: 10px;
   font-family: cursive;
-  font-size: 20px;
   font-style: italic;
   cursor: pointer;
+  margin: 2px;
+}
+
+.cart {
+  padding: 5px 20px;
   max-width: 300px;
+  font-size: 20px;
+}
+
+.clear {
+  padding: 5px 10px;
+  font-size: 15px;
 }
 
 .cart:hover {
@@ -105,6 +115,7 @@ body {
   font-size: 15px;
   font-style: italic;
   cursor: pointer;
+  margin: 2px;
 }
 
 .clear:hover {
@@ -115,8 +126,6 @@ body {
 
 .cart-buttons {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
 }
 
 /* home */
