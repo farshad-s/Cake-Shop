@@ -471,6 +471,18 @@ body {
     margin-left: 220px;
     margin-top: -35px;
   }
+  /* Shop Section */
+  .title-container {
+    padding-top: 0px;
+  }
+  .search-bar {
+    padding: 10px 100px 10px 10px;
+  }
+  .filter-button {
+    font-size: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 @media screen and (max-width: 375px) {
