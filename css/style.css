@@ -416,9 +416,15 @@ body {
   .holder {
     margin-right: 0px;
     display: block;
+    width: auto;
   }
   .number {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .cart-buttons {
+    width: auto;
   }
   .cart,
   .clear {
