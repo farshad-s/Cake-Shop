@@ -145,6 +145,7 @@ body {
   color: white;
   font-size: 40px;
   position: absolute;
+  margin-bottom: 360px;
 }
 
 .name {
@@ -157,14 +158,14 @@ body {
 .explore {
   padding: 10px 30px;
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   border: 3px solid black;
   border-radius: 5px;
   font-size: 30px;
   font-family: cursive;
   font-weight: 900;
   position: absolute;
-  margin-top: 100px;
+  margin-top: -80px;
 }
 
 #explore {
@@ -173,12 +174,9 @@ body {
 }
 
 .explore:hover {
-  background-color: black;
+  background-color: white;
   transition: 0.5s ease;
-}
-
-#explore:hover {
-  color: rgb(243, 117, 138);
+  text-decoration: none;
 }
 
 /* about us */
