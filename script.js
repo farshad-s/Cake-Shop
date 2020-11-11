@@ -150,7 +150,7 @@ function itemName() {
 }
 
 function updateCart() {
-  return (cart.innerHTML = itemNumber + items + totalPrice);
+  return (cart.innerText = itemNumber + items + totalPrice);
 }
 
 function alertTotal() {
@@ -167,7 +167,7 @@ function alertTotal() {
 function addToBasket() {
   addToCart[0].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[0].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[0].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -175,7 +175,7 @@ function addToBasket() {
 
   addToCart[1].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[1].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[1].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -183,7 +183,7 @@ function addToBasket() {
 
   addToCart[2].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[2].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[2].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -191,7 +191,7 @@ function addToBasket() {
 
   addToCart[3].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[3].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[3].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -199,7 +199,7 @@ function addToBasket() {
 
   addToCart[4].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[4].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[4].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -207,7 +207,7 @@ function addToBasket() {
 
   addToCart[5].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[5].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[5].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -215,7 +215,7 @@ function addToBasket() {
 
   addToCart[6].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[6].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[6].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -223,7 +223,7 @@ function addToBasket() {
 
   addToCart[7].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[7].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[7].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -231,7 +231,7 @@ function addToBasket() {
 
   addToCart[8].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[8].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[8].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -239,7 +239,7 @@ function addToBasket() {
 
   addToCart[9].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[9].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[9].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -247,7 +247,7 @@ function addToBasket() {
 
   addToCart[10].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[10].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[10].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -255,7 +255,7 @@ function addToBasket() {
 
   addToCart[11].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[11].innerHTML);
+    totalPrice = totalPrice + parseFloat(price[11].innerText);
     itemName();
     updateCart();
     alertTotal();
@@ -264,7 +264,7 @@ function addToBasket() {
 
 function clearShoppingCart() {
   clearCart.addEventListener("click", function () {
-    cart.innerHTML = "Empty";
+    cart.innerText = "0 Items";
     itemNumber = 0;
     totalPrice = 0;
   });
