@@ -463,9 +463,13 @@ body {
   .about-us p {
     width: 200%;
   }
+  .about-us .explore-more {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
   .about-us img {
-    margin-left: 200px;
-    margin-top: -50px;
+    margin-left: 220px;
+    margin-top: -35px;
   }
 }
 
