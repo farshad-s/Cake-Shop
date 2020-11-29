@@ -18,29 +18,35 @@ const clearCart = document.getElementsByClassName("clear")[0];
 
 // functions for the filters //
 
-function cakeDisplay() {
-  for (let i = 0; i < cakes.length; i++) {
-    cakes[i].style.display = "block";
+function itemDisplay(item) {
+  for (let i = 0; i < item.length; i++) {
+    item[i].style.display = "block";
   }
 }
 
-function cupcakeDisplay() {
-  for (let i = 0; i < cupcakes.length; i++) {
-    cupcakes[i].style.display = "block";
-  }
-}
+// function cakeDisplay() {
+//   for (let i = 0; i < cakes.length; i++) {
+//     cakes[i].style.display = "block";
+//   }
+// }
 
-function sweetDisplay() {
-  for (let i = 0; i < sweets.length; i++) {
-    sweets[i].style.display = "block";
-  }
-}
+// function cupcakeDisplay() {
+//   for (let i = 0; i < cupcakes.length; i++) {
+//     cupcakes[i].style.display = "block";
+//   }
+// }
 
-function doughnutDisplay() {
-  for (let i = 0; i < doughnuts.length; i++) {
-    doughnuts[i].style.display = "block";
-  }
-}
+// function sweetDisplay() {
+//   for (let i = 0; i < sweets.length; i++) {
+//     sweets[i].style.display = "block";
+//   }
+// }
+
+// function doughnutDisplay() {
+//   for (let i = 0; i < doughnuts.length; i++) {
+//     doughnuts[i].style.display = "block";
+//   }
+// }
 
 function noCakeDisplay() {
   for (let i = 0; i < cakes.length; i++) {
@@ -67,7 +73,7 @@ function noDoughnutDisplay() {
 }
 
 function cakeFilter() {
-  cakeDisplay();
+  itemDisplay(cakes);
   noCupcakeDisplay();
   noSweetDisplay();
   noDoughnutDisplay();
@@ -75,7 +81,7 @@ function cakeFilter() {
 
 function cupcakeFilter() {
   noCakeDisplay();
-  cupcakeDisplay();
+  itemDisplay(cupcakes);
   noSweetDisplay();
   noDoughnutDisplay();
 }
@@ -83,7 +89,7 @@ function cupcakeFilter() {
 function sweetFilter() {
   noCakeDisplay();
   noCupcakeDisplay();
-  sweetDisplay();
+  itemDisplay(sweets);
   noDoughnutDisplay();
 }
 
@@ -91,14 +97,14 @@ function doughnutFilter() {
   noCakeDisplay();
   noCupcakeDisplay();
   noSweetDisplay();
-  doughnutDisplay();
+  itemDisplay(doughnuts);
 }
 
 function allFilter() {
-  cakeDisplay();
-  cupcakeDisplay();
-  sweetDisplay();
-  doughnutDisplay();
+  itemDisplay(cakes);
+  itemDisplay(cupcakes);
+  itemDisplay(sweets);
+  itemDisplay(doughnuts);
 }
 
 // displaying the different filters via the buttons //
