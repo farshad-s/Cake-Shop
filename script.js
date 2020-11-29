@@ -121,103 +121,27 @@ function alertTotal() {
   );
 }
 
-function addToBasket() {
-  addToCart[0].addEventListener("click", function () {
+function addToBasket(num) {
+  addToCart[num].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[0].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[1].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[1].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[2].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[2].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[3].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[3].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[4].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[4].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[5].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[5].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[6].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[6].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[7].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[7].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[8].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[8].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[9].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[9].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[10].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[10].innerText);
-    itemName();
-    updateCart();
-    alertTotal();
-  });
-
-  addToCart[11].addEventListener("click", function () {
-    itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[11].innerText);
+    totalPrice = totalPrice + parseFloat(price[num].innerText);
     itemName();
     updateCart();
     alertTotal();
   });
 }
+
+addToBasket(0);
+addToBasket(1);
+addToBasket(2);
+addToBasket(3);
+addToBasket(4);
+addToBasket(5);
+addToBasket(6);
+addToBasket(7);
+addToBasket(8);
+addToBasket(9);
+addToBasket(10);
 
 function clearShoppingCart() {
   clearCart.addEventListener("click", function () {
@@ -232,5 +156,4 @@ function clearShoppingCart() {
 itemName();
 itemFilter();
 textBarSearch();
-addToBasket();
 clearShoppingCart();
