@@ -13,8 +13,8 @@ const searchBar = document.getElementById("search-bar");
 
 const addToCart = document.getElementsByClassName("add-to-cart");
 const price = document.getElementsByClassName("price");
-const cart = document.getElementsByClassName("cart")[0];
-const clearCart = document.getElementsByClassName("clear")[0];
+const cart = document.getElementById("cart");
+const clearCart = document.getElementById("clear");
 
 const imageHolder = document.getElementsByClassName("image-holder");
 
