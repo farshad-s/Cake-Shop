@@ -24,79 +24,37 @@ function itemDisplay(item) {
   }
 }
 
-// function cakeDisplay() {
-//   for (let i = 0; i < cakes.length; i++) {
-//     cakes[i].style.display = "block";
-//   }
-// }
-
-// function cupcakeDisplay() {
-//   for (let i = 0; i < cupcakes.length; i++) {
-//     cupcakes[i].style.display = "block";
-//   }
-// }
-
-// function sweetDisplay() {
-//   for (let i = 0; i < sweets.length; i++) {
-//     sweets[i].style.display = "block";
-//   }
-// }
-
-// function doughnutDisplay() {
-//   for (let i = 0; i < doughnuts.length; i++) {
-//     doughnuts[i].style.display = "block";
-//   }
-// }
-
-function noCakeDisplay() {
-  for (let i = 0; i < cakes.length; i++) {
-    cakes[i].style.display = "none";
-  }
-}
-
-function noCupcakeDisplay() {
-  for (let i = 0; i < cupcakes.length; i++) {
-    cupcakes[i].style.display = "none";
-  }
-}
-
-function noSweetDisplay() {
-  for (let i = 0; i < sweets.length; i++) {
-    sweets[i].style.display = "none";
-  }
-}
-
-function noDoughnutDisplay() {
-  for (let i = 0; i < doughnuts.length; i++) {
-    doughnuts[i].style.display = "none";
+function stopItemDisplay(item) {
+  for (let i = 0; i < item.length; i++) {
+    item[i].style.display = "none";
   }
 }
 
 function cakeFilter() {
   itemDisplay(cakes);
-  noCupcakeDisplay();
-  noSweetDisplay();
-  noDoughnutDisplay();
+  stopItemDisplay(cupcakes);
+  stopItemDisplay(sweets);
+  stopItemDisplay(doughnuts);
 }
 
 function cupcakeFilter() {
-  noCakeDisplay();
+  stopItemDisplay(cakes);
   itemDisplay(cupcakes);
-  noSweetDisplay();
-  noDoughnutDisplay();
+  stopItemDisplay(sweets);
+  stopItemDisplay(doughnuts);
 }
 
 function sweetFilter() {
-  noCakeDisplay();
-  noCupcakeDisplay();
+  stopItemDisplay(cakes);
+  stopItemDisplay(cupcakes);
   itemDisplay(sweets);
-  noDoughnutDisplay();
+  stopItemDisplay(doughnuts);
 }
 
 function doughnutFilter() {
-  noCakeDisplay();
-  noCupcakeDisplay();
-  noSweetDisplay();
+  stopItemDisplay(cakes);
+  stopItemDisplay(cupcakes);
+  stopItemDisplay(sweets);
   itemDisplay(doughnuts);
 }
 
