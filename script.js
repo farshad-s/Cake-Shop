@@ -67,32 +67,17 @@ function allFilter() {
 
 // displaying the different filters via the buttons //
 
-function cakesOnly() {
-  cakeButton.addEventListener("click", cakeFilter);
-}
-
-function cupcakesOnly() {
-  cupcakeButton.addEventListener("click", cupcakeFilter);
-}
-
-function sweetsOnly() {
-  sweetButton.addEventListener("click", sweetFilter);
-}
-
-function doughnutsOnly() {
-  doughnutButton.addEventListener("click", doughnutFilter);
-}
-
-function displayAll() {
-  displayAllButton.addEventListener("click", allFilter);
+function buttonFilter(item, filter) {
+  item.addEventListener("click", filter);
 }
 
 function itemFilter() {
-  cakesOnly();
-  cupcakesOnly();
-  sweetsOnly();
-  doughnutsOnly();
-  displayAll();
+  buttonFilter(cakeButton, cakeFilter);
+  buttonFilter(cupcakeButton, cupcakeFilter);
+  buttonFilter(sweetButton, sweetFilter);
+  buttonFilter(cakeButton, cakeFilter);
+  buttonFilter(doughnutButton, doughnutFilter);
+  buttonFilter(displayAllButton, allFilter);
 }
 
 // displaying the different filters via the search bar //
