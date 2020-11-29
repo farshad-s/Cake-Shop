@@ -16,6 +16,8 @@ const price = document.getElementsByClassName("price");
 const cart = document.getElementsByClassName("cart")[0];
 const clearCart = document.getElementsByClassName("clear")[0];
 
+const imageHolder = document.getElementsByClassName("image-holder");
+
 // functions for the filters //
 
 function itemDisplay(item) {
@@ -131,17 +133,11 @@ function addToBasket(num) {
   });
 }
 
-addToBasket(0);
-addToBasket(1);
-addToBasket(2);
-addToBasket(3);
-addToBasket(4);
-addToBasket(5);
-addToBasket(6);
-addToBasket(7);
-addToBasket(8);
-addToBasket(9);
-addToBasket(10);
+function eachItem() {
+  for (let i = 0; i < imageHolder.length; i++) {
+    addToBasket(i);
+  }
+}
 
 function clearShoppingCart() {
   clearCart.addEventListener("click", function () {
@@ -156,4 +152,5 @@ function clearShoppingCart() {
 itemName();
 itemFilter();
 textBarSearch();
+eachItem();
 clearShoppingCart();
