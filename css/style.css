@@ -377,7 +377,6 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   font-size: 20px;
   background-color: rgb(243, 117, 138);
   color: white;
