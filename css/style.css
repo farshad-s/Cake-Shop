@@ -397,13 +397,6 @@ body {
   .header {
     justify-content: space-between;
   }
-  .logo {
-    margin-left: -10px;
-  }
-  .nav-bar ul {
-    width: 125px;
-    justify-content: space-around;
-  }
   #home-title,
   #about-title {
     display: none;
@@ -412,7 +405,6 @@ body {
     margin-right: 10px;
   }
   .holder {
-    margin-right: 0px;
     display: block;
     width: auto;
   }
@@ -427,13 +419,11 @@ body {
   .cart,
   .clear {
     padding: 5px;
-    margin: 5px;
     font-size: 15px;
   }
   /* home section */
   .home {
     height: auto;
-    max-width: 100%;
   }
   .welcome {
     margin-bottom: 100px;
@@ -459,10 +449,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 200%;
-    margin-bottom: -10px;
-  }
-  .about-us .us {
-    margin: 5px;
   }
   .about-us p {
     width: 200%;
