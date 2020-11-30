@@ -268,7 +268,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   font-size: 20px;
-  padding-top: 50px;
+  padding: 2%;
 }
 
 .store {
@@ -283,7 +283,6 @@ body {
   justify-content: space-evenly;
   width: 50%;
   margin-left: 25%;
-  margin-top: 10px;
 }
 
 .filter-button {
@@ -314,7 +313,6 @@ body {
 .search-bar-container {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
   margin-top: 25px;
 }
 
@@ -353,10 +351,8 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  width: 300px;
   padding: 15px;
-  margin-top: -7px;
-  margin-bottom: 20px;
+  margin: -7px auto 20px auto;
 }
 
 .add-to-cart {
