@@ -195,7 +195,7 @@ body {
   width: 70%;
 }
 
-.about-us .about-us-explore {
+.about-us-explore {
   font-size: 25px;
   font-style: italic;
   border: 2px solid black;
@@ -203,7 +203,6 @@ body {
   cursor: pointer;
   background-color: transparent;
   padding: 5px 10px;
-  outline: none;
 }
 
 #about-us-explore {
@@ -212,19 +211,13 @@ body {
 }
 
 .about-us-explore:hover {
-  background-color: black;
-  color: rgb(243, 117, 138);
-  transition: ease 0.2s;
-}
-
-#about-us-explore:hover {
-  color: rgb(243, 117, 138);
+  background-color: rgb(243, 117, 138);
+  transition: ease 0.6s;
 }
 
 .about-us img {
   height: 30%;
   width: 30%;
-  outline-offset: 100px;
   border: 10px solid white;
   box-shadow: -15px -15px 0 -5px white, -20px -20px 0 0 gold;
   transition: ease 0.6s;
