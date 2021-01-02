@@ -95,25 +95,7 @@ body {
   font-size: 15px;
 }
 
-.cart:hover {
-  background-color: rgb(243, 117, 138);
-  border: 2px solid rgb(243, 117, 138);
-  color: white;
-}
-
-.clear {
-  padding: 5px 10px;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-family: cursive;
-  font-size: 15px;
-  font-style: italic;
-  cursor: pointer;
-  margin: 2px;
-}
-
+.cart:hover,
 .clear:hover {
   background-color: rgb(243, 117, 138);
   border: 2px solid rgb(243, 117, 138);
