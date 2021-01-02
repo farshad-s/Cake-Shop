@@ -222,7 +222,7 @@ nav {
   width: 70%;
 }
 
-.about-us .explore-more {
+.about-us .about-us-explore {
   font-size: 25px;
   font-style: italic;
   border: 2px solid black;
@@ -233,17 +233,18 @@ nav {
   outline: none;
 }
 
-#explore-more {
+#about-us-explore {
   color: black;
   text-decoration: none;
 }
 
-.about-us .explore-more:hover {
+.about-us-explore:hover {
   background-color: black;
+  color: rgb(243, 117, 138);
   transition: ease 0.2s;
 }
 
-#explore-more:hover {
+#about-us-explore:hover {
   color: rgb(243, 117, 138);
 }
 
@@ -434,6 +435,9 @@ nav {
     margin-top: 180px;
     background-color: white;
   }
+  .explore:hover {
+    background-color: rgb(243, 117, 138);
+  }
   /* navbar */
   .header {
     justify-content: space-between;
@@ -481,7 +485,7 @@ nav {
   .about-us p {
     width: 200%;
   }
-  .about-us .explore-more {
+  .about-us .about-us-explore {
     margin-top: 30px;
     margin-left: 50px;
   }
