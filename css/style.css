@@ -9,11 +9,6 @@ body {
   font-family: cursive;
 }
 
-nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 /* container */
 
 .header {
