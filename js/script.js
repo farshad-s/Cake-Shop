@@ -126,7 +126,7 @@ function alertTotal() {
 function addToBasket(num) {
   addToCart[num].addEventListener("click", function () {
     itemNumber++;
-    totalPrice = totalPrice + parseFloat(price[num].innerText);
+    totalPrice += parseFloat(price[num].innerText);
     itemName();
     updateCart();
     alertTotal();
