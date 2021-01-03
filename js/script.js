@@ -109,14 +109,14 @@ function itemName() {
 }
 
 function updateCart() {
-  return (cart.innerText = itemNumber + items + totalPrice);
+  return (cart.innerText = itemNumber + items + totalPrice.toFixed(2));
 }
 
 function alertTotal() {
   return alert(
     "Your Shopping Basket Total is " +
       "£" +
-      totalPrice +
+      totalPrice.toFixed(2) +
       "\n You have " +
       itemNumber +
       " item(s) in your Basket"
